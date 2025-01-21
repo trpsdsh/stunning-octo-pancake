@@ -50,6 +50,15 @@ a {
     background:transparent;
 }
 
+button, input{
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    list-style: none;
+}
+  
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;

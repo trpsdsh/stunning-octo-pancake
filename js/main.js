@@ -2,7 +2,7 @@ const swiperTop = new Swiper('.top__swiper', {
     effect: 'fade',
     loop: true, 
     autoplay:{
-        delay:2000,
+        delay:200000000,
         disableOnInteraction: false,
     },
     navigation: {
