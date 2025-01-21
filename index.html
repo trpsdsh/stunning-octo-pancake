@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,7 +16,7 @@
     <div class="container">
       <div class="header__inner">
         <a href="index.html" class="logo">
-          <img src="images/logo.svg" alt="">  
+          <img src="images/header/logo.svg" alt="">  
         </a>
       <h3 class="header__title">LA COLLECTION PRIVÉE CHRISTIAN DIOR</h3>
       <nav class="menu">
@@ -40,12 +41,12 @@
         <ul class="user__nav">
           <li class="user__nav__item">
             <a href="#" class="user__nav__favourite">
-              <img src="images/favorite.svg" alt="">
+              <img src="images/header/favorite.svg" alt="">
             </a>
           </li>
          <li class="user__nav__item">
             <a href="#" class="user__nav__cart">
-              <img src="images/cart.svg" alt="">
+              <img src="images/header/cart.svg" alt="">
             </a>
           </li>
        </ul>
@@ -53,38 +54,38 @@
     </div>
   </header>
   <section class="top">
-    <div class="swiper">
+    <div class="swiper top__swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="top-slide">
             <div class="container">
               <div class="top-slide__inner">
-                <img src="images/top-slider-1.png" alt="">
+                <img src="images/top-slider/top-slider-1.png" alt="">
                 <div class="top-slide__container">
                   <h1 class="top-slide__title">GRIS DIOR</h1>
                   <p class="top-slide__subtitle">Fragrance</p>
                   <p class="top-slide__text">With Gris Dior you dare to reveal your most surprising, mysterious and unexpected facets.</p>
-                  <a href="#" class="top-slide__button">DISCOVER</a>
+                  <a href="#" class="top-slide__button button">DISCOVER</a>
                 </div>
-                <img src="images/top-slider-2.jpg" alt="">
+                <img src="images/top-slider/top-slider-2.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="top-slide" style="background-image: url(images/slider-bg-2.jpg);">
+          <div class="top-slide" style="background-image: url(images/top-slider/slider-bg-2.jpg);">
             <div class="container">
               <div class="top-slide__inner">
-                <a href="#" class="top-slide__button">YOUR NEW EXPERIENCE</a>
+                <a href="#" class="button">YOUR NEW EXPERIENCE</a>
               </div>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="top-slide" style="background-image: url(images/slider-bg-3.jpg);">
+          <div class="top-slide" style="background-image: url(images/top-slider/slider-bg-3.jpg);">
             <div class="container">
               <div class="top-slide__inner">
-                <a href="#" class="top-slide__button">YOUR NEW EXPERIENCE</a>
+                <a href="#" class="button">YOUR NEW EXPERIENCE</a>
               </div>
             </div>
           </div>
@@ -99,6 +100,102 @@
           </div>
         </div>
       </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about__top">
+        <h2 class="about__title">DARE IN GRIS DIOR</h2>
+          <div class="about__textbox">
+            <div class="about__text">
+              <p>Gris Dior is the olfactory expression of gray, the iconic color of the House of Dior that embodies the bold spirit of Christian Dior.</p>
+              <p>A unisex eau de parfum that defies gender, Gris Dior is an intense chypre fragrance that makes a strong, recognizable statement, a fragrance you adopt and interpret to suit your own rules.</p>
+              <p>Gris Dior uninhibitedly combines heritage with a modern twist and plays the unisex card with confidence. It is multifaceted and not as obvious as it seems, like the color gray, richly nuanced with its subtleties, anything but a simple mix of black and white.</p>
+            </div>
+            <div class="about__text about__text__bold">
+              <p>A backdrop for all desires, revealing all shades: dare to go gray with Gris Dior. </p>
+              <p>A bold embodiment of this elusive color, Gris Dior is a light chypre fragrance that has become an icon, an unexpected master of the game. Both a fragrance for women and a fragrance for men, its unisex trail invites uninhibited expression today.</p>
+            </div>
+          </div>
+
+          <div class="about__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3>DISCOVER GRIS DIOR</h3>
+                <img src="images/about/about-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <h3>DISCOVER GRIS DIOR</h3>
+                <img src="images/about/about-2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <h3>DISCOVER GRIS DIOR</h3>
+                <img src="images/about/about-3.jpg" alt="">
+              </div>
+              <div class="swiper-slide"><h3>DISCOVER GRIS DIOR</h3>
+                <img src="images/about/about-4.jpg" alt="">
+              </div>
+            </div>
+            <div class="about__arrow" >    
+              <div class="swiper-button-prev">
+                <img src="images/ArrowL.svg" alt="">
+              </div>
+              <div class="swiper-button-next">
+                <img src="images/ArrowR.svg" alt="">
+              </div>
+            </div>
+          </div>
+        <a href="#" class="about__slider__button button">SHOW ME MORE</a>
+      </div>
+    </div>
+  </section>
+  <section class="accordeon">
+    <div class="container">
+      <div class="accordeon__inner">
+        <div class="accordeon__item">
+          <div class="accordeon__trigger">
+            <h2 class="accordeon__trigger-title">DESCRIPTION</h2>
+            <p class="accordeon__trigger-text">Gris Dior is the olfactory expression of gray, the iconic color of the House of Dior that embodies the bold spirit of Christian Dior.</p>
+            <div class="accordeon__trigger-arrow"><img src="images/accordeon/ArrowD.svg" alt=""></div>
+          </div>
+          <div class="accordeon__content">
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+          </div>
+        </div>
+        <div class="accordeon__item">
+          <div class="accordeon__trigger">
+            <h2 class="accordeon__trigger-title">PERFUMER'S WORD</h2>
+            <p class="accordeon__trigger-text">"What if the Dior gray were a fragrance? This emphatic gray is not merely a mix of black and white, but the result of a chromatic blend.”</p>
+            <div class="accordeon__trigger-arrow"><img src="images/accordeon/ArrowD.svg" alt=""></div>
+          </div>
+          <div class="accordeon__content">
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+          </div>
+        </div>
+        <div class="accordeon__item">
+          <div class="accordeon__trigger">
+            <h2 class="accordeon__trigger-title">APPLICATION TIPS</h2>
+            <p class="accordeon__trigger-text">Spray Gris Dior on pulse points: neck and wrists.</p>
+            <div class="accordeon__trigger-arrow"><img src="images/accordeon/ArrowD.svg" alt=""></div>
+          </div>
+          <div class="accordeon__content">
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+          </div>
+        </div>
+        <div class="accordeon__item">
+          <div class="accordeon__trigger">
+            <h2 class="accordeon__trigger-title">DESCRIPTION</h2>
+            <div class="accordeon__trigger-arrow"><img src="images/accordeon/ArrowD.svg" alt=""></div>
+          </div>
+          <div class="accordeon__content">
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое курсивных, продолжил, снова ты гор мир напоивший все речью себя наш приставка злых выйти прямо ее она взобравшись собрал.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

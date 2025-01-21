@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    user-select: none;
 }
 
 body{
@@ -43,6 +44,9 @@ ul{
     margin: 0 185px 0 130px;
 }
 
+.menu__item:not(:last-child){
+    margin-bottom: 10px;
+}
 .user__nav{
     display: flex;
     gap: 20px;
@@ -84,7 +88,7 @@ ul{
 .top-slide__text{
     margin-bottom: 20px;
 }
-.top-slide__button{
+.button{
     display: inline-block;
     color: #7449BB;
     font-weight: bold;
@@ -93,7 +97,7 @@ ul{
     margin-left: auto;
 }
 
-.top-slide__button:hover{
+.button:hover{
     color: #fff;
     background-color: #7449BB;
     transition: all 1s ease-out;
@@ -101,14 +105,123 @@ ul{
 
 .container__arrow{
     position: relative;
+    margin-bottom: 150px;
 }
+
 .swiper-button-prev:after, .swiper-button-next:after{
     content: none;
 }
 
-.swiper{
-    padding-bottom: 50px;
-}
 .swiper-button-next{
     left: 76px;
 }
+
+.about{
+    margin-bottom: 150px;
+}
+.about__top{
+    margin-left: 203px;
+}
+
+.about__title{
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 400;
+    width: 184px;
+    margin-bottom: 20px;
+}
+
+.about__textbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.about__text{
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.about__text__bold{
+    padding-top: 108px;
+    padding-left: 203px;
+    font-weight: bold;
+}
+
+.about__slider{
+    width: 1200px;
+    padding-left: 200px;
+    margin-left: -200px;
+    padding-bottom: 20px;
+}
+
+.about__arrow{
+    width: auto;
+    position: relative;
+    margin-left: -200px;
+    opacity: 1;
+    margin-top: -5px;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+
+.accordeon{
+    margin-bottom: 223px;
+}
+.accordeon__item{
+    margin-left: 200px;
+    border-bottom: 1px solid #1B1B1B;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.accordeon__item:last-child::after {
+    content: '';
+    position: absolute;
+    background-image: url('../images/accordeon/duhi.jpg');
+    width: 65px;
+    height: 120px;
+    bottom: -73px;
+    left: 268px;
+  }
+  
+
+.accordeon__trigger{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+.accordeon__trigger-title{
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 400;
+    flex-basis: 400px;
+}
+
+.accordeon__trigger-text{
+    margin-right: 104px;
+    flex-basis: 387px;
+}
+
+.accordeon__trigger-arrow{
+    height: 50px;
+}
+
+.accordeon__content{
+    display: none;
+}
+.accordeon__item-active .accordeon__content{
+    display: block;
+    padding-bottom: 20px;
+}
+  
+.accordeon__item-active .accordeon__trigger-arrow {
+    opacity: 0;
+}
+  
